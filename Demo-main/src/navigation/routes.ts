@@ -1,0 +1,20 @@
+export const Routes = {
+    Bag : 'Bag',
+    Categories : 'Categories',
+    Favorites : 'Favorites',
+    Home : 'Home',
+    Kids : 'Kids',
+    Men : 'Men',
+    ProductDetail : 'ProductDetail',
+    ProductList : 'ProductList',
+    Profiles : 'Profiles',
+    Women : 'Women',
+    RootStack : 'RootStack',
+    BottomTabStack : 'BottomTabStack',
+    HomeStack : 'HomeStack',
+    ShopStack : 'ShopStack',
+    BagStack : 'BagStack',
+    FavoritesStack : 'FavoritesStack',
+    ProfilesStack : 'ProfilesStack',
+    Login : 'Login'
+}
