@@ -604,11 +604,16 @@
 				BACK_ENABLE = 1;
 				BUILD_LIBRARY_FOR_DISTRIBUTION = NO;
 				CLANG_ENABLE_MODULES = YES;
+				CLIENT_ID = "615285002663-dth1ucmv8ulo9nbn6gs34ncah3b9lk9r.apps.googleusercontent.com";
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5FZ3RL65RL;
 				DIRECT_MESSAGE_URL = "https://dev-chat-server.gluedin.io/";
 				ENABLE_BITCODE = NO;
+				FacebookAppID = 742524533414311;
+				FacebookClientToken = 137119618165273abec9744774118788;
+				FacebookDisplayName = GluedIn;
 				INFOPLIST_FILE = Demo/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = ecommerceDemoApp;
+				INFOPLIST_KEY_CFBundleDisplayName = "GluedIn-Demo";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -620,7 +625,7 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.gluedin.app;
 				PRODUCT_NAME = Demo;
 				SECRET_KEY = "66c9f76f-b07a-4e8f-852a-f92e1bcbd619";
 				SERVER_URL = "https:/$()/dev-v2-api.gluedin.io/";
@@ -645,10 +650,15 @@
 				BACK_ENABLE = 1;
 				BUILD_LIBRARY_FOR_DISTRIBUTION = NO;
 				CLANG_ENABLE_MODULES = YES;
+				CLIENT_ID = "615285002663-dth1ucmv8ulo9nbn6gs34ncah3b9lk9r.apps.googleusercontent.com";
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5FZ3RL65RL;
 				DIRECT_MESSAGE_URL = "https://dev-chat-server.gluedin.io/";
+				FacebookAppID = 742524533414311;
+				FacebookClientToken = 137119618165273abec9744774118788;
+				FacebookDisplayName = GluedIn;
 				INFOPLIST_FILE = Demo/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = ecommerceDemoApp;
+				INFOPLIST_KEY_CFBundleDisplayName = "GluedIn-Demo";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -660,7 +670,7 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.gluedin.app;
 				PRODUCT_NAME = Demo;
 				SECRET_KEY = "66c9f76f-b07a-4e8f-852a-f92e1bcbd619";
 				SERVER_URL = "https:/$()/dev-v2-api.gluedin.io/";
@@ -754,10 +764,7 @@
 					"-DFOLLY_CFG_NO_COROUTINES=1",
 					"-DFOLLY_HAVE_CLOCK_GETTIME=1",
 				);
-				OTHER_LDFLAGS = (
-					"$(inherited)",
-					" ",
-				);
+				OTHER_LDFLAGS = "$(inherited)  ";
 				REACT_NATIVE_PATH = "${PODS_ROOT}/../../node_modules/react-native";
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) DEBUG";
@@ -838,10 +845,7 @@
 					"-DFOLLY_CFG_NO_COROUTINES=1",
 					"-DFOLLY_HAVE_CLOCK_GETTIME=1",
 				);
-				OTHER_LDFLAGS = (
-					"$(inherited)",
-					" ",
-				);
+				OTHER_LDFLAGS = "$(inherited)  ";
 				REACT_NATIVE_PATH = "${PODS_ROOT}/../../node_modules/react-native";
 				SDKROOT = iphoneos;
 				USE_HERMES = true;

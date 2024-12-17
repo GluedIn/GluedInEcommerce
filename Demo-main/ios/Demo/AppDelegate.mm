@@ -1,6 +1,7 @@
 #import "AppDelegate.h"
 
 #import <React/RCTBundleURLProvider.h>
+#import <GoogleSignIn/GoogleSignIn.h>
 
 @implementation AppDelegate
 
@@ -61,6 +62,8 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+  
+  [[GIDSignIn sharedInstance].configuration initWithClientID: @"615285002663-3690usngp9ot5cfo6kqhbht36fgpf18p.apps.googleusercontent.com"];
   self.moduleName = @"Demo";
   // You can add your custom initial props in the dictionary below.
   // They will be passed down to the ViewController used by React Native.

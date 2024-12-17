@@ -23,6 +23,7 @@ enable_user_defined_build_types!
 
 target 'Demo' do
   pod 'GluedInSDK', :build_type => :dynamic_framework
+  pod 'RNGoogleSignin', :path => '../node_modules/@react-native-google-signin/google-signin'
   
   config = use_native_modules!
   pod 'Kingfisher', '6.1.1', :build_type => :dynamic_framework
