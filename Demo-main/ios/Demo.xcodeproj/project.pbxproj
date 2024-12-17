@@ -614,7 +614,7 @@
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
-				VERTICAL_FEED = 1;
+				VERTICAL_FEED = 0;
 				isAuthSkip = 1;
 				isBottomBarEnable = 1;
 			};
@@ -653,7 +653,7 @@
 				SWIFT_OBJC_BRIDGING_HEADER = "Demo-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
-				VERTICAL_FEED = 1;
+				VERTICAL_FEED = 0;
 				isAuthSkip = 1;
 				isBottomBarEnable = 1;
 			};

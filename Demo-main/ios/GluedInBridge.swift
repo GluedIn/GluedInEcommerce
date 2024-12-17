@@ -34,8 +34,12 @@ class GluedInBridge: RCTEventEmitter {
   //MARK: - Launch SDK as guest -
   @objc
   func launchSDK(_ callback: @escaping RCTResponseSenderBlock) {
-    launchSDKAsGuest { isSuccess, error in
-      callback([NSNull(), "Launch successful"])
+    GluedInCore.shared.initSdk {[weak self] in
+      self?.launchSDKAsGuest { isSuccess, error in
+        callback([NSNull(), "Launch successful"])
+      }
+    } failure: { error, code in
+      print(error)
     }
   }
   
@@ -50,7 +54,6 @@ class GluedInBridge: RCTEventEmitter {
       }
     }
   }
-  
   
   //MARK: - Perform Signup-
   @objc

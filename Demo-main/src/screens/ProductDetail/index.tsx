@@ -86,17 +86,18 @@ const ProductDetail = (props: any) => {
                     </Text>
                 </View>
             </ScrollView>
-            <View style={[bottomContainer,{ paddingBottom : bottom > 0 ? bottom : Sizes._20}]}>
-                <TouchableOpacity style={addToCartBtn}>
-                    <Text style={btnText}>ADD TO CART</Text>
-                </TouchableOpacity>
-            </View>
             <View>
-
-            <Button 
+            
+            <View style={[bottomContainer,{ paddingBottom : bottom > 0 ? bottom : Sizes._20}]}>
+            <Button style={addToCartBtn}
               buttonTxt={"  Launch GluedIn  "} 
               onPress={() => onGluedInLaunchPress()}  />
           </View>
+                {/* <TouchableOpacity style={addToCartBtn}>
+                    <Text style={btnText}>ADD TO CART</Text>
+                </TouchableOpacity> */}
+            </View>
+            
         </View>
     )
 }
