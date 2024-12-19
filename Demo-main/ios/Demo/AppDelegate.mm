@@ -2,6 +2,7 @@
 
 #import <React/RCTBundleURLProvider.h>
 #import <GoogleSignIn/GoogleSignIn.h>
+#import <FBSDKCoreKit/FBSDKCoreKit.h>
 
 @implementation AppDelegate
 
@@ -64,6 +65,10 @@
 {
   
   [[GIDSignIn sharedInstance].configuration initWithClientID: @"615285002663-3690usngp9ot5cfo6kqhbht36fgpf18p.apps.googleusercontent.com"];
+  
+  [[FBSDKApplicationDelegate sharedInstance] application:application
+                           didFinishLaunchingWithOptions:launchOptions];
+
   self.moduleName = @"Demo";
   // You can add your custom initial props in the dictionary below.
   // They will be passed down to the ViewController used by React Native.
@@ -72,6 +77,12 @@
   return [super application:application didFinishLaunchingWithOptions:launchOptions];
 }
 
+- (BOOL)application:(UIApplication *)application
+            openURL:(NSURL *)url
+            options:(NSDictionary<UIApplicationOpenURLOptionsKey, id> *)options {
+  BOOL handled = [[FBSDKApplicationDelegate sharedInstance] application:application openURL:url options:options];
+  return handled;
+}
 - (NSURL *)sourceURLForBridge:(RCTBridge *)bridge
 {
   return [self bundleURL];

@@ -185,11 +185,10 @@ class GluedInBridge: RCTEventEmitter {
   
   // launch with email and username
   func launchSDKwithUserName(email: String, password: String, completion: @escaping((_ isSuccess: Bool,_ errorMessage: String)-> Void)){
+    
     GluedIn.shared.quickLaunch(email: email,
                                password: password,
                                firebaseToken: "",
-                               deviceId: "",
-                               deviceType: "ios",
                                fullName: "",
                                autoCreate: false,
                                termConditionAccepted: true,
@@ -284,6 +283,10 @@ extension GluedInBridge: CreatorProtocol {
 
 //MARK: - Extension -
 extension GluedInBridge : GluedInDelegate{
+  func onPostKeepShoppingClick(navigationController: UINavigationController?) {
+    print("GluedInDelegate onPostKeepShoppingClick Method ")
+  }
+  
   func requestNativeAdCell() -> UITableViewCell {
     let nativeAdCell = UITableViewCell()  //UnifiedNativeAdCell(style: .default, reuseIdentifier: "UnifiedNativeAdCellIdentifier")
     return nativeAdCell

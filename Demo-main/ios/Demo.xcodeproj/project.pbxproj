@@ -64,6 +64,7 @@
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = Demo/main.m; sourceTree = "<group>"; };
 		13B07FB81A68108700A75B9A /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = PrivacyInfo.xcprivacy; path = Demo/PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
 		19DCAF5AC12740E8BC28258C /* Montserrat-BoldItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Montserrat-BoldItalic.ttf"; path = "../src/assets/fonts/Montserrat-BoldItalic.ttf"; sourceTree = "<group>"; };
+		281C607F2D13A2AA00A562F6 /* Demo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; name = Demo.entitlements; path = Demo/Demo.entitlements; sourceTree = "<group>"; };
 		2836AA5D2D0FF6EC007D4B67 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		2836AA5F2D100332007D4B67 /* Demo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Demo-Bridging-Header.h"; sourceTree = "<group>"; };
 		2836AA602D100332007D4B67 /* GluedInBridge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GluedInBridge.swift; sourceTree = "<group>"; };
@@ -135,6 +136,7 @@
 		13B07FAE1A68108700A75B9A /* Demo */ = {
 			isa = PBXGroup;
 			children = (
+				281C607F2D13A2AA00A562F6 /* Demo.entitlements */,
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
 				13B07FB01A68108700A75B9A /* AppDelegate.mm */,
 				13B07FB51A68108700A75B9A /* Images.xcassets */,
@@ -605,6 +607,7 @@
 				BUILD_LIBRARY_FOR_DISTRIBUTION = NO;
 				CLANG_ENABLE_MODULES = YES;
 				CLIENT_ID = "615285002663-dth1ucmv8ulo9nbn6gs34ncah3b9lk9r.apps.googleusercontent.com";
+				CODE_SIGN_ENTITLEMENTS = Demo/Demo.entitlements;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 5FZ3RL65RL;
 				DIRECT_MESSAGE_URL = "https://dev-chat-server.gluedin.io/";
@@ -651,6 +654,7 @@
 				BUILD_LIBRARY_FOR_DISTRIBUTION = NO;
 				CLANG_ENABLE_MODULES = YES;
 				CLIENT_ID = "615285002663-dth1ucmv8ulo9nbn6gs34ncah3b9lk9r.apps.googleusercontent.com";
+				CODE_SIGN_ENTITLEMENTS = Demo/Demo.entitlements;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 5FZ3RL65RL;
 				DIRECT_MESSAGE_URL = "https://dev-chat-server.gluedin.io/";
